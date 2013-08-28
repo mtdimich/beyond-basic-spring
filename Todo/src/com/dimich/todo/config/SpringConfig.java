@@ -31,7 +31,7 @@ public class SpringConfig extends WebMvcConfigurerAdapter {
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
 		registry.addInterceptor(new DeprecatedEndpointInterceptor());
-		registry.addInterceptor(new CachingInterceptor());
+//		registry.addInterceptor(new CachingInterceptor());
 		super.addInterceptors(registry);
 	}
 
