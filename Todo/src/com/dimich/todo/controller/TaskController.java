@@ -139,10 +139,9 @@ public class TaskController {
 	 * @Request Mapping
 	 * @ResponseBody
 	 */
-//	@DeprecatedEndpoint(expiryVersion = "1-25-2013", replacement = "v5/tasks")
+	@DeprecatedEndpoint(expiryVersion = "1-25-2013", replacement = "v5/tasks")
 	@RequestMapping(value = "v4/tasks", method = RequestMethod.GET)
 	@ResponseBody
-	@Deprecated
 	public List<Task> listTasksV4() {
 		return taskService.getTasks();
 	}
